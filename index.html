@@ -11,9 +11,9 @@
 <body>
   <div class="page">
     <header class="header">
-      <img class="logo logo_place_header" src="images/logo_place_header.svg" alt="Тут был логотип Яндекс Практикум">
+      <div class="logo logo_place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
-      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#">Узнать →</a></p>
+      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#">Узнать &rarr;</a></p>
       <img class="header__main-illustration" src="images/header-image.png" alt="Тут был фрагмент картины художника Фёдора Решетникова «Опять двойка»">
       <div class="header__square-pic"></div>
     </header>
@@ -71,7 +71,7 @@
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
-        <a class="feynman__link" href="#">Подробнее →</a>
+        <a class="feynman__link" href="#">Подробнее &rarr;</a>
       </section>
       <section class="kaufman">
         <img class="kaufman__triangle" src="images/kaufman-triangle.svg" alt="Тут был красивый синий треугольник">
@@ -122,7 +122,28 @@
       </section>
     </main>
     <footer class="footer">
-
+      <div class="footer__columns">
+        <div class="footer__column_content_copyright">
+          <div class="logo logo_place_footer"></div>
+          <p class="footer__author">&copy; 2020. Сергей Фирсов</p>
+        </div>
+        <nav class="footer__column_content_info">
+          <h3 class="footer__column-heading">О Практикуме</h3>
+          <ul class="footer__column-links list">
+            <li><a class="footer__link" href="#">Главная</a></li>
+            <li><a class="footer__link" href="#">Концепция</a></li>
+            <li><a class="footer__link" href="#">Наставники</a></li>
+          </ul>
+        </nav>
+        <div class="footer__column_content_social">
+          <h3 class="footer__column-heading">Соцсети</h3>
+          <ul class="footer__column-links list">
+            <li><a class="footer__link" href="#"><img class="footer__social-icon" src="images/facebook_color_white.svg" alt="иконка Facebook">Facebook</a></li>
+            <li><a class="footer__link" href="#"><img class="footer__social-icon" src="images/vk_color_white.svg" alt="иконка ВКонтакте">ВКонтакте</a></li>
+            <li><a class="footer__link" href="#"><img class="footer__social-icon" src="images/instagram_color_white.svg" alt="иконка Instagram">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </div>
 </body>

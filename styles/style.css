@@ -15,10 +15,6 @@
   margin: 0;
 }
 
-div {
-  /*border: 1px solid red;/*Потом удолить!!!*/
-}
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -27,15 +23,20 @@ div {
   display: flex;
   background-color: #f2f2f2;
   position: relative;
+  overflow: hidden;
 }
 
 .logo {
-  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .logo_place_header {
+  background-image: url('../images/logo_place_header.svg');
   width: 183px;
   height: 32px;
+  position: absolute;
   top: 30px;
   left: 64px;
   z-index: 1;
@@ -197,7 +198,6 @@ div {
 }
 
 .feynman__subtitle {
-  width: 390px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -239,3 +239,74 @@ div {
   width: 200px;
   margin-top: 80px;
 }
+
+.footer {
+  display: flex;
+  min-height: 350px;
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 60px auto 40px;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  background-image: url('../images/logo_place_footer.svg');
+  width: 183px;
+  height: 35px;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 18px 0;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+
